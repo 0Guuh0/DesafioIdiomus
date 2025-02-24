@@ -1,0 +1,110 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  width: 100%;
+  height: 100%;
+}
+body{
+  width: 100%;
+  height: 100%;
+}
+
+.main{
+  color: white;
+  display: flex;
+  flex-direction:column ;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-image: url('./image/maytob.jpg');
+  gap: 2.5rem;
+  font-family: "Poppins";
+}
+
+#titulo{
+  font-size: 2.3rem;
+}
+#subtitulo{
+  font-size: 2rem;
+}
+#btn{
+  border: 2px solid black;
+  box-shadow: 0px 10px 20px 0px black;
+  border-radius: 2rem;
+  background-color: rgb(165, 42, 42);
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: white;
+  padding: 0.5rem;
+}
+#btn:hover{
+  width: 20rem;
+  box-shadow: 0px 0px 3px 0px black;
+  transform: translateY(1rem);
+  cursor: pointer;
+}
+#textAuxiliar{
+  font-family: 'Poppins',sans-serif;
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+#faixa{
+  text-align: center;
+  font-family: 'Poppins',sans-serif;
+  font-size: 1.5rem;
+  box-shadow: 0px 10px 20px 0px black;
+  width: 25%;
+  animation: faixa 5s infinite ease-in-out ;
+  color: white;
+  background-color: rgb(255, 0, 0);
+}
+
+/* Animacao */
+@keyframes faixa {
+  from{
+    transform: translateX(414px);
+    opacity: 10%;
+  }
+  to{
+    transform: translateX(-1000px);
+  }
+}
+
+/* Responsividade */
+@media (min-width: 400px) and (max-width: 1200px) {
+  .main{
+    text-align: center;
+    gap: 1.5rem;
+  }
+  #titulo{
+    font-size: 1rem;
+  }
+  #subtitulo{
+    font-size: 1rem;
+  }
+  #btn{
+  border: 2px solid black;
+  box-shadow: 0px 10px 20px 0px black;
+  border-radius: 2rem;
+  background-color: rgb(165, 42, 42);
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  color: white;
+  padding: 0.5rem;
+  }
+  #faixa{
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+    font-size: 0.7rem;
+    box-shadow: 0px 10px 20px 0px black;
+    width: 40%;
+    padding: 0.5rem 0;
+    animation: faixa 3s infinite linear ;
+    color: white;
+    background-color: rgb(255, 0, 0);
+  }
+}
