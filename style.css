@@ -6,20 +6,22 @@
 html{
   width: 100%;
   height: 100%;
+  margin: 0;
 }
 body{
   width: 100%;
   height: 100%;
+  margin: 0;
 }
 
 .main{
   color: white;
   display: flex;
   flex-direction:column ;
-  justify-content: center;
+  justify-content: baseline;
   align-items: center;
   width: 100%;
-  height: 100%;
+  height: 210%;
   background-image: url('./image/maytob.jpg');
   gap: 2.5rem;
   font-family: "Poppins";
@@ -62,7 +64,27 @@ body{
   color: white;
   background-color: rgb(255, 0, 0);
 }
-
+#text{
+  text-align: center;
+  font-size: 2rem;
+  width: 70%;
+}
+#btn2{
+  border: 2px solid black;
+  box-shadow: 0px 10px 20px 0px black;
+  border-radius: 2rem;
+  background-color: rgb(165, 42, 42);
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: white;
+  padding: 0.5rem;
+}
+#btn2:hover{
+  cursor: pointer;
+  width: 11rem;
+  box-shadow: 0px 0px 3px 0px black;
+  transform: translateY(1rem);
+}
 /* Animacao */
 @keyframes faixa {
   from{
@@ -75,10 +97,12 @@ body{
 }
 
 /* Responsividade */
-@media (min-width: 400px) and (max-width: 1200px) {
+@media (min-width: 400px) and (max-width: 1000px) {
   .main{
+    padding: 0.5rem;
     text-align: center;
     gap: 1.5rem;
+    height: 330%;
   }
   #titulo{
     font-size: 1rem;
@@ -106,5 +130,9 @@ body{
     animation: faixa 3s infinite linear ;
     color: white;
     background-color: rgb(255, 0, 0);
+  }
+  #text{
+
+    font-size: 2rem;
   }
 }
